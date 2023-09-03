@@ -1,0 +1,235 @@
+.sec-parent{
+    background-color: #f5f5fc;
+    overflow: hidden;
+}
+
+.sec-parent .parent{
+    height: 600px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #5559cc;
+    cursor: pointer;
+    z-index: 99 ;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    
+}
+.sec-parent .parent .child-head{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 25%;
+    margin-left: -100px;
+   
+}
+.sec-parent .parent .child-head h2{
+    color: #1f2278;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+    
+}
+.sec-parent .parent .child-boxs{
+    margin-top: 70px;
+}
+.sec-parent .parent .child-boxs input{
+    display:block;
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border: 1px solid #cccdf1;
+    border-radius: 10px;
+    transition: .5s all ease;
+}
+.sec-parent .parent .child-boxs input:hover{
+    border: #2c2f80 1px solid;
+}
+.sec-parent .parent .child-boxs .link{
+    text-decoration: none;
+    background-color: #f17732;
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+/* .min-sec-4 .boxs-contant{
+    height: 600px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #5559cc;
+    cursor: pointer;
+    z-index: 99 ;
+    background-color: #fff;
+    
+   
+}
+
+.min-sec-4 .form-box h2{
+    color: #1f2278;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.min-sec-4 .form-box input{
+    display:block;
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border: 1px solid #cccdf1;
+    border-radius: 10px;
+    transition: .5s all ease;
+   
+}
+.min-sec-4 .form-box input:hover{
+    border: #2c2f80 1px solid;
+}
+.min-sec-4 .form-box .date{
+    margin-bottom: 40px;
+}
+.min-sec-4 .form-box .link{
+    text-decoration: none;
+    background-color: #f17732;
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 20;
+} */ 
+.sec-parent .animate{
+    position: relative;
+}
+.sec-parent .animate .img-animate{
+    position: absolute;
+    animation: movesss 1s infinite alternate;
+}
+.sec-parent .animate .img-animate-4{
+    left:110px;
+    bottom: 200px;
+    width: 110px;
+    border-radius: 20px;
+    z-index: 3;
+}
+.sec-parent .animate .img-animate-3{
+    left:310px;
+    bottom: 60px;
+    z-index: 3;
+}
+.sec-parent .animate .img-animate-2{
+    left:10px;
+    top: 150px;
+    z-index: 3;
+}
+.sec-parent .animate .img-animate-1{
+    right:120px;
+    top: 50px;
+    z-index: 3;
+    width: 120px;
+}
+@keyframes movesss{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.sec-parent .box-imges{
+    position: relative;
+    display: flex;
+}
+.sec-parent .box-imges .mobile{
+    width: 650px;
+}
+.sec-parent .box-imges .girl{
+    position: absolute;
+    width: 230px;
+    bottom: 16px;
+    right: 20px;
+    z-index: 66;
+ animation: mone 2s infinite alternate;
+}
+@keyframes mone{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+@media only screen and (max-width: 600px){
+    .sec-parent .parent{
+        height: 600px;
+        background-color: #fff;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .sec-parent .parent .child-head{
+        left: 32%;
+    }
+    .sec-parent .parent .child-head h2{
+        font-size: 25px;
+    }
+    .sec-parent .box-imges .mobile {
+        border-style: none;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      .sec-parent .box-imges .girl{
+        height: 250px;
+        width: 150px !important;
+    }
+    .sec-parent .animate .img-animate{
+        position: absolute;
+        animation: movesss 1s infinite alternate;
+        width: 60px;
+    }
+    .sec-parent .animate .img-animate-4{
+        left:110px;
+        bottom: 120px;
+        width: 70px;
+        border-radius: 20px;
+        z-index: 3;
+    }
+    .sec-parent .animate .img-animate-3{
+        left:220px;
+        bottom: 60px;
+        z-index: 3;
+    }
+    .sec-parent .animate .img-animate-2{
+        left:10px;
+        top: 110px;
+        z-index: 3;
+    }
+    .sec-parent .animate .img-animate-1{
+        right:130px;
+        top: 50px;
+        z-index: 3;
+        width: 80px;
+
+    }
+
+}

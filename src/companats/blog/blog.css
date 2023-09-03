@@ -1,0 +1,21 @@
+.min-sec-7{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.min-blog{
+    padding-top: -120px;
+    margin-top: -140px;
+}
+@media (mx-width:600px) {
+    /* .min-blog{
+        padding-top: 20px !important;
+        margin-top: 150px !important;
+    } */
+    .min-blog-2 .blogss-col-6{
+        margin-bottom: 170px !important;
+        position: relative;
+    }
+    /* .min-blog-2 .blogss-col{
+      margin-bottom: 190px !important;
+    } */
+}
